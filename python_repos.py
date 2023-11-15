@@ -8,6 +8,7 @@ print(f"Status code: {r.status_code}")
 
 # Store API response in a variable
 response_dict = r.json()
+print(f"Total repositories: {response_dict['total_count']}")
 
 # Process results.
 print(response_dict.keys())
