@@ -20,7 +20,7 @@ print(f"\nSelected information about first repository:")
 print(f"Name: {repo_dict['name']}")
 print(f"Owner: {repo_dict['owner']['login']}")
 print(f"Stars: {repo_dict['stargazers_count']}")
-print(f"")
+print(f"Repository: {repo_dict['html_url']}")
 
 
 # Process results.
