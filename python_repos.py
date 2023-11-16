@@ -17,7 +17,10 @@ print(f"Repositories returned: {len(repo_dicts)}")
 # Explore the first repository
 repo_dict = repo_dicts[0]
 print(f"\nSelected information about first repository:")
-
+print(f"Name: {repo_dict['name']}")
+print(f"")
+print(f"")
+print(f"")
 
 
 # Process results.
