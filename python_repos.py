@@ -21,6 +21,9 @@ print(f"Name: {repo_dict['name']}")
 print(f"Owner: {repo_dict['owner']['login']}")
 print(f"Stars: {repo_dict['stargazers_count']}")
 print(f"Repository: {repo_dict['html_url']}")
+print(f"Created: {repo_dict['']}")
+print(f"Updated: {repo_dict['']}")
+print(f"Description: {repo_dict['']}")
 
 
 # Process results.
