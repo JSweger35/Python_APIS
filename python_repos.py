@@ -18,7 +18,7 @@ print(f"Repositories returned: {len(repo_dicts)}")
 repo_dict = repo_dicts[0]
 print(f"\nSelected information about first repository:")
 print(f"Name: {repo_dict['name']}")
-print(f"")
+print(f"Owner: {repo_dict['owner']['login']}")
 print(f"")
 print(f"")
 
