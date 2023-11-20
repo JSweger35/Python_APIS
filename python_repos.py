@@ -13,18 +13,12 @@ print(f"Status code: {r.status_code}")
 response_dict = r.json()
 repo_dicts = response_dict['items']
 repo_names, stars = [], []
-
 # Explore the first repository
-repo_dict = repo_dicts[0]
-print(f"\nSelected information about each repository:")
+# repo_dict = repo_dicts[0]
+# print(f"\nSelected information about each repository:")
 for repo_dict in repo_dicts:
-    print(f"Name: {repo_dict['name']}")
-    print(f"Owner: {repo_dict['owner']['login']}")
-    print(f"Stars: {repo_dict['stargazers_count']}")
-    print(f"Repository: {repo_dict['html_url']}")
-    print(f"Created: {repo_dict['created_at']}")
-    print(f"Updated: {repo_dict['updated_at']}")
-    print(f"Description: {repo_dict['description']}")
+    repo_names.append(repo_dict['name'])
+    stars.append(repo_dict['stargazers_count'])
 
 
 # Process results.
