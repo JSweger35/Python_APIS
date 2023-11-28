@@ -21,5 +21,9 @@ for repo_dict in repo_dicts:
     stars.append(repo_dict['stargazers_count'])
 
 
-# Process results.
-print(response_dict.keys())
+# Make Visualization
+data = [{
+    'type' : 'bar',
+    'x' : repo_names,
+    'y' : stars,
+}]
