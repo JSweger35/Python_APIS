@@ -34,3 +34,4 @@ my_layout = {
     'yaxis' : {'title':'Stars'},
 }
 
+fig = {'data' : data, 'layout' : my_layout}
