@@ -20,6 +20,11 @@ for repo_dict in repo_dicts:
     repo_names.append(repo_dict['name'])
     stars.append(repo_dict['stargazers_count'])
 
+    owner = repo_dict['owner']['login']
+    description = repo_dict['description']
+    label = f"{owner}<br />{description}"
+    labels.append(label)
+
 
 # Make Visualization
 data = [{
