@@ -12,7 +12,7 @@ print(f"Status code: {r.status_code}")
 # Process results
 response_dict = r.json()
 repo_dicts = response_dict['items']
-repo_names, stars = [], []
+repo_names, stars, labels = [], [], []
 # Explore the first repository
 # repo_dict = repo_dicts[0]
 # print(f"\nSelected information about each repository:")
