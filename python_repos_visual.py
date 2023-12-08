@@ -29,7 +29,7 @@ for repo_dict in repo_dicts:
 # Make Visualization
 data = [{
     'type' : 'bar',
-    'x' : repo_names,
+    'x' : repo_links,
     'y' : stars,
     'hovertext' : labels,
     'marker' : {
