@@ -9,5 +9,5 @@ print(f"Status code: {r.status_code}")
 # Explore the structuree of the data
 response_dict = r.json()
 readable_file = 'data/readable_hn_data.json'
-with open(readanble_file, 'w') as f:
+with open(readable_file, 'w') as f:
     json.dump(response_dict, f, indent=4)
