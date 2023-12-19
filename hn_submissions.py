@@ -16,3 +16,10 @@ for submission_id in submission_ids[:30]:
     r = requests.get(url)
     print(f"id: {submission_id}\tstatus: {r.status_code}")
     response_dict = r.json()
+
+    # Build a dictionary for each article
+    submission_dict = {
+        'title' : response_dict['Title']
+        'hn_link' : 
+        'comments' : 
+    }
